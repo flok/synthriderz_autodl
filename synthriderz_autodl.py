@@ -52,7 +52,7 @@ def getSynthRiderInstallFolder():
 if __name__ == "__main__":
     # get Synth Rider install directory from registry
     folder = getSynthRiderInstallFolder()
-    folder += r'\CustomSongs2' # add CustomSongs folder to it
+    folder += r'\CustomSongs' # add CustomSongs folder to it
     # get songs through the SynthRiderz api
     data = requests.get('https://synthriderz.com/api/beatmaps').json()
     # start downloader with data and destination folder
